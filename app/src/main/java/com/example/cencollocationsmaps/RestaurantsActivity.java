@@ -60,6 +60,7 @@ public class RestaurantsActivity extends AppCompatActivity {
 
     private void displayMap(int index) {
         intent = new Intent(this, MapsActivity.class);
+        intent.putExtra("restaurant", restaurantListView.getItemAtPosition(index).toString());
         startActivity(intent);
     }
 }

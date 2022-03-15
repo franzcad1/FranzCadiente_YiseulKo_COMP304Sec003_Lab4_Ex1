@@ -3,6 +3,8 @@ package com.example.cencollocationsmaps;
 import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -13,9 +15,13 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.example.cencollocationsmaps.databinding.ActivityMapsBinding;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
-
+    private LatLng restaurantLocation;
+    String[] restaurantInfo;
+    String restaurantName;
     private GoogleMap mMap;
     private ActivityMapsBinding binding;
+    private Button button;
+    private boolean isSatelliteView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +34,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        restaurantName = getIntent().getStringExtra("restaurant");
+        switch (restaurantName) {
+            case "Bistro Manila":
+                restaurantInfo = getResources().getStringArray(R.array.bistroManila);
+                restaurantLocation = new LatLng(Double.parseDouble(restaurantInfo[0]),Double.parseDouble(restaurantInfo[1]));
+                break;
+        }
+
     }
 
     /**
@@ -42,10 +57,26 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        mMap.addMarker(new MarkerOptions().position(restaurantLocation).title(restaurantName));
+        CameraUpdateFactory.zoomTo(15);
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(restaurantLocation));
 
-        // Add a marker in Toronto and move the camera
-        LatLng toronto = new LatLng(43.66, -79.35);
-        mMap.addMarker(new MarkerOptions().position(toronto).title("Marker in Toronto"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(toronto));
+        button = findViewById(R.id.mapTypeBtn);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (isSatelliteView) {
+                    mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+                    button.setText("Satellite Map");
+                }
+                if (!isSatelliteView) {
+                    mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+                    button.setText("Standard Map");
+                }
+                isSatelliteView = !isSatelliteView;
+
+            }
+        });
+
     }
 }

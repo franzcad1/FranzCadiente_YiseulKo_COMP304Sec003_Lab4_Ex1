@@ -16,6 +16,12 @@
         <item>Makkal Chon</item>
     </string-array>
 
+    <string-array name="italian">
+        <item>Korean 1</item>
+        <item>Korean 2</item>
+        <item>Korean 3</item>
+    </string-array>
+
     <string-array name="filipino">
         <item>Bistro Manila</item>
         <item>Remelys Restaurant</item>
@@ -28,10 +34,15 @@
         <item>Korean 3</item>
     </string-array>
 
-    <string-array name="italian">
-        <item>Korean 1</item>
-        <item>Korean 2</item>
-        <item>Korean 3</item>
+
+
+
+    <string-array name="bistroManila">
+        <item>43.78748</item>
+        <item>-79.26687</item>
+
     </string-array>
+    <!-- 0 : log, 1: lat -->
+
 
 </resources>
