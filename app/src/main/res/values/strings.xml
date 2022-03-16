@@ -11,15 +11,15 @@
     </string-array>
 
     <string-array name="korean">
-        <item>Korean 2</item>
-        <item>Korean 3</item>
+        <item>Lim Ga Ne Restaurant</item>
+        <item>Bapbo Korean Restaurant</item>
         <item>Makkal Chon</item>
     </string-array>
 
     <string-array name="italian">
-        <item>Korean 1</item>
-        <item>Korean 2</item>
-        <item>Korean 3</item>
+        <item>Figo Toronto</item>
+        <item>Trattoria Fieramosca</item>
+        <item>Il Covo</item>
     </string-array>
 
     <string-array name="filipino">
@@ -63,7 +63,39 @@
         <item>43.78750</item>
         <item>-79.26603</item>
     </string-array>
-    <!-- 0 : log, 1: lat -->
+
+    <string-array name="LimGaNeRestaurant">
+        <item>43.664031140046305</item>
+        <item>-79.41689169282323</item>
+    </string-array>
+
+    <string-array name="BapboKoreanRestaurant">
+        <item>43.655595845296645</item>
+        <item>-79.38494027896995</item>
+    </string-array>
+
+    <string-array name="MakkalChon">
+        <item>43.744674434169106</item>
+        <item>-79.29630022441263</item>
+    </string-array>
+
+    <string-array name="FigoToronto">
+        <item>43.647709850200215</item>
+        <item>-79.39043150948676</item>
+    </string-array>
+
+    <string-array name="TrattoriaFieramosca">
+        <item>43.66956230173063</item>
+        <item>-79.39733923693092</item>
+    </string-array>
+
+    <string-array name="IlCovo">
+        <item>43.65521663732858</item>
+        <item>-79.41336458591584</item>
+    </string-array>
+
+
+    <!-- 0 : lat, 1: long -->
 
 
 </resources>

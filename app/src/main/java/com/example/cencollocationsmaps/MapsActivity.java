@@ -61,6 +61,30 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 restaurantInfo = getResources().getStringArray(R.array.supertaste);
                 restaurantLocation = new LatLng(Double.parseDouble(restaurantInfo[0]),Double.parseDouble(restaurantInfo[1]));
                 break;
+            case "Lim Ga Ne Restaurant":
+                restaurantInfo = getResources().getStringArray(R.array.LimGaNeRestaurant);
+                restaurantLocation = new LatLng(Double.parseDouble(restaurantInfo[0]),Double.parseDouble(restaurantInfo[1]));
+                break;
+            case "Bapbo Korean Restaurant":
+                restaurantInfo = getResources().getStringArray(R.array.BapboKoreanRestaurant);
+                restaurantLocation = new LatLng(Double.parseDouble(restaurantInfo[0]),Double.parseDouble(restaurantInfo[1]));
+                break;
+            case "Makkal Chon":
+                restaurantInfo = getResources().getStringArray(R.array.MakkalChon);
+                restaurantLocation = new LatLng(Double.parseDouble(restaurantInfo[0]),Double.parseDouble(restaurantInfo[1]));
+                break;
+            case "Figo Toronto":
+                restaurantInfo = getResources().getStringArray(R.array.FigoToronto);
+                restaurantLocation = new LatLng(Double.parseDouble(restaurantInfo[0]),Double.parseDouble(restaurantInfo[1]));
+                break;
+            case "Trattoria Fieramosca":
+                restaurantInfo = getResources().getStringArray(R.array.TrattoriaFieramosca);
+                restaurantLocation = new LatLng(Double.parseDouble(restaurantInfo[0]),Double.parseDouble(restaurantInfo[1]));
+                break;
+            case "Il Covo":
+                restaurantInfo = getResources().getStringArray(R.array.IlCovo);
+                restaurantLocation = new LatLng(Double.parseDouble(restaurantInfo[0]),Double.parseDouble(restaurantInfo[1]));
+                break;
         }
 
     }
@@ -81,6 +105,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(restaurantLocation));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(restaurantLocation, 15));
 
+        //toggle map <-> satellite map type
         button = findViewById(R.id.mapTypeBtn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

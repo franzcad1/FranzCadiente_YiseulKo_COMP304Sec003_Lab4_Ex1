@@ -12,7 +12,9 @@
         android:id="@+id/mapTypeBtn"
         android:layout_width="match_parent"
         android:layout_height="69dp"
-        android:text="Satellite View"/>
+        android:text="Satellite View"
+        android:textColor="@color/white"
+        android:background="@color/red"/>
     tools:layout_editor_absoluteX="140dp"
     tools:layout_editor_absoluteY="565dp" />
 

@@ -48,7 +48,7 @@ public class RestaurantsActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1, restaurants);
         restaurantListView.setAdapter(adapter);
 
-        // Event-handlers
+        // Event-handler for listview items
         restaurantListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
