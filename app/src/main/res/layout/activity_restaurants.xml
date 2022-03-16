@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RestaurantsActivity">
+    tools:context="com.example.FranzCadiente_YiseulKo_COMP304Sec003_Lab4_Ex1.RestaurantsActivity">
 
     <ListView
         android:id="@+id/restaurantsListView"

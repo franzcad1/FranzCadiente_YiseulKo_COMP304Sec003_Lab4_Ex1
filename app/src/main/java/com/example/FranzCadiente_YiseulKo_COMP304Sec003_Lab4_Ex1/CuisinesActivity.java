@@ -1,4 +1,4 @@
-package com.example.cencollocationsmaps;
+package com.example.FranzCadiente_YiseulKo_COMP304Sec003_Lab4_Ex1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.example.cencollocationsmaps.R;
 
 import java.util.Arrays;
 import java.util.List;

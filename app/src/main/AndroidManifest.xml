@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CencolLocationsMaps">
         <activity
-            android:name=".RestaurantsActivity"
+            android:name="com.example.FranzCadiente_YiseulKo_COMP304Sec003_Lab4_Ex1.RestaurantsActivity"
             android:exported="false" />
         <activity
-            android:name=".CuisinesActivity"
+            android:name="com.example.FranzCadiente_YiseulKo_COMP304Sec003_Lab4_Ex1.CuisinesActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,7 +36,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name="com.example.FranzCadiente_YiseulKo_COMP304Sec003_Lab4_Ex1.MapsActivity"
             android:exported="false"
             android:label="@string/title_activity_maps"></activity>
     </application>

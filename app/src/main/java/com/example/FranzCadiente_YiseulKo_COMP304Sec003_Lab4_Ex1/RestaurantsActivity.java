@@ -1,4 +1,4 @@
-package com.example.cencollocationsmaps;
+package com.example.FranzCadiente_YiseulKo_COMP304Sec003_Lab4_Ex1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,7 +8,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
+
+import com.example.cencollocationsmaps.R;
 
 public class RestaurantsActivity extends AppCompatActivity {
     String [] restaurants;
@@ -21,12 +22,6 @@ public class RestaurantsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_restaurants);
 
         restaurantListView = findViewById(R.id.restaurantsListView);
-        //TextView textView = new TextView(getApplicationContext());
-        //textView.setText(getResources().getString(R.string.campus_txtPrompt));
-
-        //lstView.addHeaderView(textView);
-        //lstView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
-        //lstView.setTextFilterEnabled(true);
 
         String cuisineType = getIntent().getStringExtra("cuisine");
         switch (cuisineType) {
