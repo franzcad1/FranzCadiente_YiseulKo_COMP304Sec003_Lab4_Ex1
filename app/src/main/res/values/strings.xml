@@ -35,33 +35,33 @@
     </string-array>
 
     <string-array name="bistroManila">
-        <item>43.78748</item>
-        <item>-79.26687</item>
+        <item>43.78754</item>
+        <item>-79.26694</item>
     </string-array>
 
     <string-array name="remelys">
         <item>43.79248</item>
-        <item>-79.24958</item>
+        <item>-79.24954</item>
     </string-array>
 
     <string-array name="barriofiesta">
         <item>43.79555</item>
-        <item>-79.22647</item>
+        <item>-79.22644</item>
     </string-array>
 
     <string-array name="chopstick">
         <item>43.79517</item>
-        <item>-79.24021</item>
+        <item>-79.24019</item>
     </string-array>
 
     <string-array name="hakka">
-        <item>43.77642</item>
-        <item>-79.23502</item>
+        <item>43.72613</item>
+        <item>-79.28668</item>
     </string-array>
 
     <string-array name="supertaste">
-        <item>43.78750</item>
-        <item>-79.26603</item>
+        <item>43.78748</item>
+        <item>-79.26587</item>
     </string-array>
 
     <string-array name="LimGaNeRestaurant">

@@ -9,5 +9,7 @@
     <ListView
         android:id="@+id/restaurantsListView"
         android:layout_width="match_parent"
+        android:listSelector="@drawable/list_color_selector"
+        android:background="@color/beige"
         android:layout_height="match_parent" />
 </LinearLayout>
