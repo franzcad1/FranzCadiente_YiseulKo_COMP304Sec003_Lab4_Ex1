@@ -29,18 +29,39 @@
     </string-array>
 
     <string-array name="chinese">
-        <item>Korean 1</item>
-        <item>Korean 2</item>
-        <item>Korean 3</item>
+        <item>Chopstick House</item>
+        <item>Hakka Legend Asian Cuisine</item>
+        <item>Super Taste</item>
     </string-array>
-
-
-
 
     <string-array name="bistroManila">
         <item>43.78748</item>
         <item>-79.26687</item>
+    </string-array>
 
+    <string-array name="remelys">
+        <item>43.79248</item>
+        <item>-79.24958</item>
+    </string-array>
+
+    <string-array name="barriofiesta">
+        <item>43.79555</item>
+        <item>-79.22647</item>
+    </string-array>
+
+    <string-array name="chopstick">
+        <item>43.79517</item>
+        <item>-79.24021</item>
+    </string-array>
+
+    <string-array name="hakka">
+        <item>43.77642</item>
+        <item>-79.23502</item>
+    </string-array>
+
+    <string-array name="supertaste">
+        <item>43.78750</item>
+        <item>-79.26603</item>
     </string-array>
     <!-- 0 : log, 1: lat -->
 

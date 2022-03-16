@@ -41,6 +41,26 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 restaurantInfo = getResources().getStringArray(R.array.bistroManila);
                 restaurantLocation = new LatLng(Double.parseDouble(restaurantInfo[0]),Double.parseDouble(restaurantInfo[1]));
                 break;
+            case "Remelys Restaurant":
+                restaurantInfo = getResources().getStringArray(R.array.remelys);
+                restaurantLocation = new LatLng(Double.parseDouble(restaurantInfo[0]),Double.parseDouble(restaurantInfo[1]));
+                break;
+            case "Barrio Fiesta":
+                restaurantInfo = getResources().getStringArray(R.array.barriofiesta);
+                restaurantLocation = new LatLng(Double.parseDouble(restaurantInfo[0]),Double.parseDouble(restaurantInfo[1]));
+                break;
+            case "Chopstick House":
+                restaurantInfo = getResources().getStringArray(R.array.chopstick);
+                restaurantLocation = new LatLng(Double.parseDouble(restaurantInfo[0]),Double.parseDouble(restaurantInfo[1]));
+                break;
+            case "Hakka Legend Asian Cuisine":
+                restaurantInfo = getResources().getStringArray(R.array.hakka);
+                restaurantLocation = new LatLng(Double.parseDouble(restaurantInfo[0]),Double.parseDouble(restaurantInfo[1]));
+                break;
+            case "Super Taste":
+                restaurantInfo = getResources().getStringArray(R.array.supertaste);
+                restaurantLocation = new LatLng(Double.parseDouble(restaurantInfo[0]),Double.parseDouble(restaurantInfo[1]));
+                break;
         }
 
     }
@@ -58,8 +78,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         mMap.addMarker(new MarkerOptions().position(restaurantLocation).title(restaurantName));
-        CameraUpdateFactory.zoomTo(15);
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(restaurantLocation));
+        //mMap.moveCamera(CameraUpdateFactory.newLatLng(restaurantLocation));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(restaurantLocation, 15));
 
         button = findViewById(R.id.mapTypeBtn);
         button.setOnClickListener(new View.OnClickListener() {
