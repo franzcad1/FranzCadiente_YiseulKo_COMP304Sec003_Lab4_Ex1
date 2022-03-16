@@ -116,7 +116,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     button.setText("Satellite Map");
                 }
                 if (!isSatelliteView) {
-                    mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+                    mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
                     button.setText("Standard Map");
                 }
                 isSatelliteView = !isSatelliteView;
